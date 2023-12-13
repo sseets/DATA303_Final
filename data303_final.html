@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="HTML_example (1)/css/css_full.css">
+        <title>US Partisan Lean </title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="data303_final.html">Home</a></li>
+                    <li><a href="data303_analysis.html">Analysis</a></li>
+                    <li><a href="data303_closerlook.html">A Closer Look</a></li>
+                    <li><a href="data303_contentious.html">Contentious Districts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>US Partisan Lean</h1>
+            </div>
+            </header><main>
+            <h3>Background</h3>
+            <p>The purpose of this investigation is to see how partisan leaning has changed across the US in the past couple years. Are we becoming more polarized? What factors are associated with partisan changes, and in what direction? The purpose of this project is less to explore the exact partisanship of different districts, but to evaluate patterns among those that are changing. </p>
+
+            <h3>Data</h3>
+            <p>The data used for this project comes primarily from FiveThirtyEight’s GitHub site and includes: partisan lean by congressional district for 2018, 2020, 2021, and 2022 (data from 2019 was not available), elasticity scores, and urbanicity data.</p>
+            <p><dfn>Partisan lean</dfn> is calculated as “50 percent the state or district’s lean relative to the nation in the most recent presidential election, 25 percent its relative lean in the second-most-recent presidential election and 25 percent a custom state-legislative lean based on the statewide popular vote in the four most recent state House elections” (FiveThirtyEight, 2022). In short, it is a comprehensive measure of a district’s political leaning that analyzes both comparison to the US as a whole and voting history. The scale ranges from -100 to 100, with -100 being a complete Republican lean and 100 being a complete Democratic lean. In addition to these values, I also calculate the change in partisan lean between years. These are simply calculated by subtracting the lean of the previous year from the current year and, as such, range from a scale of -200 to 200. Positive values indicate that the district became more liberal, whereas negative values indicate it became more conservative. </p>
+            <p><dfn>Elasticity</dfn> represents how sensitive a district is to national political changes. These are not always swing states, but rather states whose partisan leaning or strength might vary drastically depending on the national political environment. The numeric values of these scores represent how many percentage points a district is expected to move towards a party for every point the national mood moves towards that party. For example, a district with a score of 1.10 would be expected to move towards a given party by 1.10 percentage points for every 1.0 percentage points the national mood trends towards that party.</p>
+            <p>Finally, the <dfn>urbanization index</dfn> provides a value and classification for how urban or rural a district is. These values correspond with the following categories: </p>
+            <ul>
+            <li>Mostly Rural: urbanization index below 9.5.</li>
+            <li>Rural-Exurban: urbanization index from 9.5 up to 10.5</li>
+            <li>Suburban-Exurban: urbanization index from 10.5 up to 11.5</li>
+            <li>Dense Suburban: urbanization index from 11.5 up to 12.5</li>
+            <li>Urban-Suburban: urbanization index from 12.5 up to 13</li>
+            <li>Dense Urban: urbanization index of 13 or higher</li>
+            </ul>
+            
+            <div class="content-container">
+                <p class="center-text">Explore more about the data here:</p>
+        
+                <div class="link-container">
+                    <a href="https://github.com/fivethirtyeight/data/tree/master/partisan-lean" target="_blank">Partisan Lean Data</a>
+                </div>
+        
+                <div class="link-container">
+                    <a href="https://github.com/fivethirtyeight/data/tree/master/district-urbanization-index-2022" target="_blank">Urbanicity Data</a>
+                </div>
+        
+                <div class="link-container">
+                    <a href="https://github.com/fivethirtyeight/data/tree/master/political-elasticity-scores" target="_blank">Elasticity Data</a>
+                </div>
+                <div class="link-container">
+                    <a href="https://www.270towin.com/2022-house-election/competitive-2022-house-districts" target="_blank">Contentious Districts</a>
+                </div>
+            </div>
+        
+    </body>
