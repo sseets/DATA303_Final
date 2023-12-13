@@ -1,8 +1,7 @@
-Final Project for DATA303
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Interacting with Data</title>
+        <title>Final Project for DATA303</title>
         <style>
         	html {
 				margin: 0;
